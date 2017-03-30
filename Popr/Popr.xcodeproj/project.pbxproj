@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2595506D1E82F8740076EA86 /* Main-Signup-Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2595506C1E82F8740076EA86 /* Main-Signup-Login.storyboard */; };
+		2595506F1E82FCBD0076EA86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595506E1E82FCBD0076EA86 /* LoginViewController.swift */; };
+		259550711E82FCC70076EA86 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259550701E82FCC70076EA86 /* SignUpViewController.swift */; };
+		259550731E82FCD50076EA86 /* MainLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259550721E82FCD50076EA86 /* MainLoginViewController.swift */; };
+		259550781E8321C00076EA86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 259550771E8321C00076EA86 /* GoogleService-Info.plist */; };
 		25A881AC1E80478200764EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A881AB1E80478200764EE3 /* AppDelegate.swift */; };
 		25A881B11E80478200764EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A881AF1E80478200764EE3 /* Main.storyboard */; };
 		25A881B31E80478200764EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A881B21E80478200764EE3 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2595506C1E82F8740076EA86 /* Main-Signup-Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-Signup-Login.storyboard"; sourceTree = "<group>"; };
+		2595506E1E82FCBD0076EA86 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		259550701E82FCC70076EA86 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		259550721E82FCD50076EA86 /* MainLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLoginViewController.swift; sourceTree = "<group>"; };
+		259550771E8321C00076EA86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		25A881A81E80478200764EE3 /* Popr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A881AB1E80478200764EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A881B01E80478200764EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259550741E82FCEA0076EA86 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				259550721E82FCD50076EA86 /* MainLoginViewController.swift */,
+				259550701E82FCC70076EA86 /* SignUpViewController.swift */,
+				2595506E1E82FCBD0076EA86 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		259550751E82FD0B0076EA86 /* Main/Singup/Login */ = {
+			isa = PBXGroup;
+			children = (
+				2595506C1E82F8740076EA86 /* Main-Signup-Login.storyboard */,
+			);
+			name = Main/Singup/Login;
+			sourceTree = "<group>";
+		};
+		259550761E82FD260076EA86 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				25A881AF1E80478200764EE3 /* Main.storyboard */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
 		25A8819F1E80478200764EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +138,10 @@
 				25A881F21E804E6000764EE3 /* Models */,
 				25A881F11E804E5900764EE3 /* ViewControllers */,
 				25A881F01E804E5100764EE3 /* Views */,
-				25A881AF1E80478200764EE3 /* Main.storyboard */,
-				25A881B21E80478200764EE3 /* Assets.xcassets */,
 				25A881B41E80478200764EE3 /* LaunchScreen.storyboard */,
+				25A881B21E80478200764EE3 /* Assets.xcassets */,
 				25A881B71E80478200764EE3 /* Info.plist */,
+				259550771E8321C00076EA86 /* GoogleService-Info.plist */,
 			);
 			path = Popr;
 			sourceTree = "<group>";
@@ -131,6 +167,8 @@
 		25A881F01E804E5100764EE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				259550761E82FD260076EA86 /* Timeline */,
+				259550751E82FD0B0076EA86 /* Main/Singup/Login */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -139,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				25A881F41E804EC700764EE3 /* ViewController.swift */,
+				259550741E82FCEA0076EA86 /* Login */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -269,6 +308,8 @@
 			files = (
 				25A881B61E80478200764EE3 /* LaunchScreen.storyboard in Resources */,
 				25A881B31E80478200764EE3 /* Assets.xcassets in Resources */,
+				259550781E8321C00076EA86 /* GoogleService-Info.plist in Resources */,
+				2595506D1E82F8740076EA86 /* Main-Signup-Login.storyboard in Resources */,
 				25A881B11E80478200764EE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259550731E82FCD50076EA86 /* MainLoginViewController.swift in Sources */,
+				2595506F1E82FCBD0076EA86 /* LoginViewController.swift in Sources */,
 				25A881F51E804EC700764EE3 /* ViewController.swift in Sources */,
+				259550711E82FCC70076EA86 /* SignUpViewController.swift in Sources */,
 				25A881AC1E80478200764EE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +590,7 @@
 				25A881D21E80478300764EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25A881D31E80478300764EE3 /* Build configuration list for PBXNativeTarget "PoprTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +599,7 @@
 				25A881D51E80478300764EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25A881D61E80478300764EE3 /* Build configuration list for PBXNativeTarget "PoprUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +608,7 @@
 				25A881D81E80478300764EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
