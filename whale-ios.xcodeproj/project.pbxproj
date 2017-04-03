@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256A079E1E93014300EF250E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A079D1E93014300EF250E /* AppDelegate.swift */; };
+		256A07A01E93014300EF250E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A079F1E93014300EF250E /* ViewController.swift */; };
+		256A07A31E93014300EF250E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256A07A11E93014300EF250E /* Main.storyboard */; };
+		256A07A51E93014300EF250E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256A07A41E93014300EF250E /* Assets.xcassets */; };
+		256A07A81E93014300EF250E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256A07A61E93014300EF250E /* LaunchScreen.storyboard */; };
+		256A07B31E93014300EF250E /* whale_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07B21E93014300EF250E /* whale_iosTests.swift */; };
+		256A07BE1E93014300EF250E /* whale_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07BD1E93014300EF250E /* whale_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		256A07AF1E93014300EF250E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256A07921E93014300EF250E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256A07991E93014300EF250E;
+			remoteInfo = "whale-ios";
+		};
+		256A07BA1E93014300EF250E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256A07921E93014300EF250E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256A07991E93014300EF250E;
+			remoteInfo = "whale-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		256A079A1E93014300EF250E /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256A079D1E93014300EF250E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		256A079F1E93014300EF250E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		256A07A21E93014300EF250E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		256A07A41E93014300EF250E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		256A07A71E93014300EF250E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		256A07A91E93014300EF250E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256A07AE1E93014300EF250E /* whale-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whale-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256A07B21E93014300EF250E /* whale_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_iosTests.swift; sourceTree = "<group>"; };
+		256A07B41E93014300EF250E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256A07B91E93014300EF250E /* whale-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whale-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256A07BD1E93014300EF250E /* whale_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_iosUITests.swift; sourceTree = "<group>"; };
+		256A07BF1E93014300EF250E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		256A07971E93014300EF250E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A07AB1E93014300EF250E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A07B61E93014300EF250E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256A07911E93014300EF250E = {
+			isa = PBXGroup;
+			children = (
+				256A079C1E93014300EF250E /* whale-ios */,
+				256A07B11E93014300EF250E /* whale-iosTests */,
+				256A07BC1E93014300EF250E /* whale-iosUITests */,
+				256A079B1E93014300EF250E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		256A079B1E93014300EF250E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				256A079A1E93014300EF250E /* whale-ios.app */,
+				256A07AE1E93014300EF250E /* whale-iosTests.xctest */,
+				256A07B91E93014300EF250E /* whale-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256A079C1E93014300EF250E /* whale-ios */ = {
+			isa = PBXGroup;
+			children = (
+				256A079D1E93014300EF250E /* AppDelegate.swift */,
+				256A079F1E93014300EF250E /* ViewController.swift */,
+				256A07A11E93014300EF250E /* Main.storyboard */,
+				256A07A41E93014300EF250E /* Assets.xcassets */,
+				256A07A61E93014300EF250E /* LaunchScreen.storyboard */,
+				256A07A91E93014300EF250E /* Info.plist */,
+			);
+			path = "whale-ios";
+			sourceTree = "<group>";
+		};
+		256A07B11E93014300EF250E /* whale-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				256A07B21E93014300EF250E /* whale_iosTests.swift */,
+				256A07B41E93014300EF250E /* Info.plist */,
+			);
+			path = "whale-iosTests";
+			sourceTree = "<group>";
+		};
+		256A07BC1E93014300EF250E /* whale-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				256A07BD1E93014300EF250E /* whale_iosUITests.swift */,
+				256A07BF1E93014300EF250E /* Info.plist */,
+			);
+			path = "whale-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		256A07991E93014300EF250E /* whale-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256A07C21E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-ios" */;
+			buildPhases = (
+				256A07961E93014300EF250E /* Sources */,
+				256A07971E93014300EF250E /* Frameworks */,
+				256A07981E93014300EF250E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "whale-ios";
+			productName = "whale-ios";
+			productReference = 256A079A1E93014300EF250E /* whale-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		256A07AD1E93014300EF250E /* whale-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256A07C51E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-iosTests" */;
+			buildPhases = (
+				256A07AA1E93014300EF250E /* Sources */,
+				256A07AB1E93014300EF250E /* Frameworks */,
+				256A07AC1E93014300EF250E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256A07B01E93014300EF250E /* PBXTargetDependency */,
+			);
+			name = "whale-iosTests";
+			productName = "whale-iosTests";
+			productReference = 256A07AE1E93014300EF250E /* whale-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		256A07B81E93014300EF250E /* whale-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256A07C81E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-iosUITests" */;
+			buildPhases = (
+				256A07B51E93014300EF250E /* Sources */,
+				256A07B61E93014300EF250E /* Frameworks */,
+				256A07B71E93014300EF250E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256A07BB1E93014300EF250E /* PBXTargetDependency */,
+			);
+			name = "whale-iosUITests";
+			productName = "whale-iosUITests";
+			productReference = 256A07B91E93014300EF250E /* whale-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		256A07921E93014300EF250E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kenny Batista";
+				TargetAttributes = {
+					256A07991E93014300EF250E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RL292UUN9S;
+						ProvisioningStyle = Automatic;
+					};
+					256A07AD1E93014300EF250E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RL292UUN9S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 256A07991E93014300EF250E;
+					};
+					256A07B81E93014300EF250E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RL292UUN9S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 256A07991E93014300EF250E;
+					};
+				};
+			};
+			buildConfigurationList = 256A07951E93014300EF250E /* Build configuration list for PBXProject "whale-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 256A07911E93014300EF250E;
+			productRefGroup = 256A079B1E93014300EF250E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				256A07991E93014300EF250E /* whale-ios */,
+				256A07AD1E93014300EF250E /* whale-iosTests */,
+				256A07B81E93014300EF250E /* whale-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		256A07981E93014300EF250E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256A07A81E93014300EF250E /* LaunchScreen.storyboard in Resources */,
+				256A07A51E93014300EF250E /* Assets.xcassets in Resources */,
+				256A07A31E93014300EF250E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A07AC1E93014300EF250E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A07B71E93014300EF250E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		256A07961E93014300EF250E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256A07A01E93014300EF250E /* ViewController.swift in Sources */,
+				256A079E1E93014300EF250E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A07AA1E93014300EF250E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256A07B31E93014300EF250E /* whale_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256A07B51E93014300EF250E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256A07BE1E93014300EF250E /* whale_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256A07B01E93014300EF250E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256A07991E93014300EF250E /* whale-ios */;
+			targetProxy = 256A07AF1E93014300EF250E /* PBXContainerItemProxy */;
+		};
+		256A07BB1E93014300EF250E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256A07991E93014300EF250E /* whale-ios */;
+			targetProxy = 256A07BA1E93014300EF250E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		256A07A11E93014300EF250E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256A07A21E93014300EF250E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		256A07A61E93014300EF250E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256A07A71E93014300EF250E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		256A07C01E93014300EF250E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		256A07C11E93014300EF250E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		256A07C31E93014300EF250E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RL292UUN9S;
+				INFOPLIST_FILE = "whale-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kenny.whale-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		256A07C41E93014300EF250E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RL292UUN9S;
+				INFOPLIST_FILE = "whale-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kenny.whale-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		256A07C61E93014300EF250E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RL292UUN9S;
+				INFOPLIST_FILE = "whale-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kenny.whale-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whale-ios.app/whale-ios";
+			};
+			name = Debug;
+		};
+		256A07C71E93014300EF250E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RL292UUN9S;
+				INFOPLIST_FILE = "whale-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kenny.whale-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whale-ios.app/whale-ios";
+			};
+			name = Release;
+		};
+		256A07C91E93014300EF250E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RL292UUN9S;
+				INFOPLIST_FILE = "whale-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kenny.whale-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "whale-ios";
+			};
+			name = Debug;
+		};
+		256A07CA1E93014300EF250E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RL292UUN9S;
+				INFOPLIST_FILE = "whale-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kenny.whale-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "whale-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		256A07951E93014300EF250E /* Build configuration list for PBXProject "whale-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256A07C01E93014300EF250E /* Debug */,
+				256A07C11E93014300EF250E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256A07C21E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256A07C31E93014300EF250E /* Debug */,
+				256A07C41E93014300EF250E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		256A07C51E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256A07C61E93014300EF250E /* Debug */,
+				256A07C71E93014300EF250E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		256A07C81E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256A07C91E93014300EF250E /* Debug */,
+				256A07CA1E93014300EF250E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 256A07921E93014300EF250E /* Project object */;
+}

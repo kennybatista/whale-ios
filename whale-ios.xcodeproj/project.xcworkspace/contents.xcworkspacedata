@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Popr.xcodeproj">
+      location = "self:whale-ios.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,14 +7,14 @@
     "DFCFFAA73E8BA5344CC69D9CCC5A096544BCF25E" : 9223372036854775807,
     "D0BDDE3FE9DFFD285414DC74CF8AA7B422C7ACEF" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D899E21A-604D-46F4-A616-1FF039FE63A1",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "79A95AC6-EF12-4740-9A8E-12F1115A1033",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "DFCFFAA73E8BA5344CC69D9CCC5A096544BCF25E" : "whale-ios\/",
     "D0BDDE3FE9DFFD285414DC74CF8AA7B422C7ACEF" : ""
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : "Popr",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "whale-ios",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Popr\/Popr.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "whale-ios.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kennybatista\/Miscellaneous.git",

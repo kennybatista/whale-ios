@@ -1,15 +1,15 @@
 //
-//  PoprTests.swift
-//  PoprTests
+//  whale_iosTests.swift
+//  whale-iosTests
 //
-//  Created by Kenny Batista on 3/20/17.
-//  Copyright © 2017 kennybatista. All rights reserved.
+//  Created by Kenny Batista on 4/3/17.
+//  Copyright © 2017 Kenny Batista. All rights reserved.
 //
 
 import XCTest
-@testable import Popr
+@testable import whale_ios
 
-class PoprTests: XCTestCase {
+class whale_iosTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
