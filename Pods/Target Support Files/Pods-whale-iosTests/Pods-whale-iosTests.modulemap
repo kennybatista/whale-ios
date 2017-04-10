@@ -1,0 +1,6 @@
+framework module Pods_whale_iosTests {
+  umbrella header "Pods-whale-iosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

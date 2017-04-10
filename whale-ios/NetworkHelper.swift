@@ -34,6 +34,7 @@ struct NetworkHelper {
     
     
     
+    
 //[S - SIGN IN]
     static func signIn(email: String, password: String, completion: @escaping CallCompletion) {
         print(#function)
@@ -71,9 +72,23 @@ struct NetworkHelper {
             } else { //There was no error, continue
                 //json
                 do {
+                    
+                    // Sending json to be parsed
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                    
                     let parsedUser = UserParser.parseUser(json: json)
                     completion(.success(receivedData(user: parsedUser)))
+                    
+                    
+                    // Get token
+                    let headerResponse = response as? HTTPURLResponse
+                    let key = "Authorization"
+                    let valueToken = headerResponse?.allHeaderFields[key]
+                    
+                    // Save to keychain
+                    KeychainHelper.saveToKeychain(key: key, value: valueToken! as! String)
+                    
+                    
                 } catch {
                     completion(.failure(error))
                     return
@@ -86,6 +101,11 @@ struct NetworkHelper {
         task.resume()
     }
 //[E - SIGN IN]
+    
+    
+    
+    
+//[S - SIGN UP]
     
     static func signUp(email: String, first_name: String, last_name: String, password: String, username: String, completion: @escaping CallCompletion){
         print(#function)
@@ -123,6 +143,18 @@ struct NetworkHelper {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                     let parsedUser = UserParser.parseUser(json: json)
                     completion(.success(receivedData(user: parsedUser)))
+                    
+                    
+                    // Get token
+                    let headerResponse = response as? HTTPURLResponse
+                    let key = "Authorization"
+                    let valueToken = headerResponse?.allHeaderFields[key]
+                    
+                    // Save to keychain
+                    KeychainHelper.saveToKeychain(key: key, value: valueToken! as! String)
+
+                    
+                    
                 } catch {
                     completion(.failure(error))
                     return
@@ -134,23 +166,46 @@ struct NetworkHelper {
         
         task.resume()
     }
-    
-    
-    
-//[S - SIGN UP]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 //[E - SIGN UP]
+    
+    
+    
+    
+//[S - GET ANSWERS]
+    static func GetAnswer(per_page: Int, intpage: Int, competion: @escaping CallCompletion){
+        
+        //Create url
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "whale2-elixir.herokuapp.com"
+        urlComponents.path = "/api/v1/answers"
+        
+        
+        // add params
+        let perPage = URLQueryItem(name: "per_page", value: String(per_page))
+        let intPage = URLQueryItem(name: "intpage", value: String(intpage))
+        
+        urlComponents.queryItems = [perPage, intPage]
+        
+        
+        
+        
+        // Create request, and HTTP method
+        var request = URLRequest(url: urlComponents.url!)
+        
+        request.httpMethod = "GET"
+        
+        
+        
+        let task = URLSession.shared.dataTask(with: urlComponents.url!) { (data, response, error) in
+            <#code#>
+        }
+        
+        task.resume()
+    }
+    
+    
+    
+    
+//[E - GET ANSWERS]
 }

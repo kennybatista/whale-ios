@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBAction func signInButton(_ sender: Any) {
         
-        NetworkHelper.signIn(email: "viralloop1@gmail.com", password: "abc123") { (response) in
+        NetworkHelper.signIn(email: "gordoneliel@gmail.com", password: "example") { (response) in
             print(response)
         }
         
