@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254DBE321E97DE130058DAB5 /* UserParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254DBE311E97DE130058DAB5 /* UserParser.swift */; };
 		256A079E1E93014300EF250E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A079D1E93014300EF250E /* AppDelegate.swift */; };
 		256A07A01E93014300EF250E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A079F1E93014300EF250E /* ViewController.swift */; };
 		256A07A31E93014300EF250E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256A07A11E93014300EF250E /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		256A07A81E93014300EF250E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256A07A61E93014300EF250E /* LaunchScreen.storyboard */; };
 		256A07B31E93014300EF250E /* whale_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07B21E93014300EF250E /* whale_iosTests.swift */; };
 		256A07BE1E93014300EF250E /* whale_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07BD1E93014300EF250E /* whale_iosUITests.swift */; };
+		256A07D01E93042D00EF250E /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07CF1E93042D00EF250E /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		254DBE301E956A090058DAB5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		254DBE311E97DE130058DAB5 /* UserParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserParser.swift; sourceTree = "<group>"; };
 		256A079A1E93014300EF250E /* whale-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256A079D1E93014300EF250E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		256A079F1E93014300EF250E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		256A07B91E93014300EF250E /* whale-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whale-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256A07BD1E93014300EF250E /* whale_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_iosUITests.swift; sourceTree = "<group>"; };
 		256A07BF1E93014300EF250E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256A07CF1E93042D00EF250E /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				256A079D1E93014300EF250E /* AppDelegate.swift */,
-				256A079F1E93014300EF250E /* ViewController.swift */,
+				254DBE301E956A090058DAB5 /* MyPlayground.playground */,
+				256A07CD1E93026300EF250E /* Networking */,
+				256A07CE1E93028000EF250E /* Models */,
+				256A07CC1E93025F00EF250E /* UI */,
+				256A07CB1E93025300EF250E /* Controllers */,
 				256A07A11E93014300EF250E /* Main.storyboard */,
 				256A07A41E93014300EF250E /* Assets.xcassets */,
 				256A07A61E93014300EF250E /* LaunchScreen.storyboard */,
@@ -123,6 +132,37 @@
 				256A07BF1E93014300EF250E /* Info.plist */,
 			);
 			path = "whale-iosUITests";
+			sourceTree = "<group>";
+		};
+		256A07CB1E93025300EF250E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				256A079F1E93014300EF250E /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		256A07CC1E93025F00EF250E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		256A07CD1E93026300EF250E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				256A07CF1E93042D00EF250E /* NetworkHelper.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		256A07CE1E93028000EF250E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				254DBE311E97DE130058DAB5 /* UserParser.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				256A07A01E93014300EF250E /* ViewController.swift in Sources */,
+				256A07D01E93042D00EF250E /* NetworkHelper.swift in Sources */,
 				256A079E1E93014300EF250E /* AppDelegate.swift in Sources */,
+				254DBE321E97DE130058DAB5 /* UserParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +556,7 @@
 				256A07C41E93014300EF250E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256A07C51E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +565,7 @@
 				256A07C71E93014300EF250E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256A07C81E93014300EF250E /* Build configuration list for PBXNativeTarget "whale-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +574,7 @@
 				256A07CA1E93014300EF250E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
