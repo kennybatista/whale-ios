@@ -18,6 +18,7 @@
 		256A07B31E93014300EF250E /* whale_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07B21E93014300EF250E /* whale_iosTests.swift */; };
 		256A07BE1E93014300EF250E /* whale_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07BD1E93014300EF250E /* whale_iosUITests.swift */; };
 		256A07D01E93042D00EF250E /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A07CF1E93042D00EF250E /* NetworkHelper.swift */; };
+		25C9A0AE1E9EE539009C1D03 /* AnswerParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C9A0AD1E9EE539009C1D03 /* AnswerParser.swift */; };
 		66EB5BE589758197697497C1 /* Pods_whale_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED1499C44C1747676384120 /* Pods_whale_ios.framework */; };
 		988E48086D8120D26601FAC3 /* Pods_whale_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDA315F854AC83BFEC16172 /* Pods_whale_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		256A07BD1E93014300EF250E /* whale_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_iosUITests.swift; sourceTree = "<group>"; };
 		256A07BF1E93014300EF250E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		256A07CF1E93042D00EF250E /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		25C9A0AD1E9EE539009C1D03 /* AnswerParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerParser.swift; sourceTree = "<group>"; };
 		333D428A8AFAD9D72BA3E41B /* Pods-whale-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale-iosTests/Pods-whale-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		6AD8E624D4F89E35FE942E4F /* Pods-whale-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale-ios/Pods-whale-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		B624DFD5F03C5C19147AC497 /* Pods-whale-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale-iosTests/Pods-whale-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				254DBE311E97DE130058DAB5 /* UserParser.swift */,
+				25C9A0AD1E9EE539009C1D03 /* AnswerParser.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 			files = (
 				256A07A01E93014300EF250E /* ViewController.swift in Sources */,
 				256A07D01E93042D00EF250E /* NetworkHelper.swift in Sources */,
+				25C9A0AE1E9EE539009C1D03 /* AnswerParser.swift in Sources */,
 				256A079E1E93014300EF250E /* AppDelegate.swift in Sources */,
 				25252E181E9BFE5B00C02E93 /* KeychainHelper.swift in Sources */,
 				254DBE321E97DE130058DAB5 /* UserParser.swift in Sources */,

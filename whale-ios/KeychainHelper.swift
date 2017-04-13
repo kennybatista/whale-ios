@@ -15,16 +15,19 @@ class KeychainHelper {
     static let keychain = Keychain()
     
     // Save to Keychai
-    static func saveToKeychain(key: String, value: String) {
-        
-        self.keychain[key] = value
+    static func saveToKeychain(key: String, value: String) throws {
+        try self.keychain.set(key, key: value)
     }
     
     
     // Get from Keychain
     static func getFromKeychain(key: String) -> String? {
-        let token = keychain[key]
-        return token!
+        do {
+            return try keychain.get(key)
+        } catch {
+            return nil
+        }
+        
     }
     
     // Is keychain available

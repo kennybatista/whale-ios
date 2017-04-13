@@ -23,6 +23,17 @@ class ViewController: UIViewController {
             print(response)
         }
     }
+    
+    
+    @IBAction func getAnswers(_ sender: Any) {
+        print(#function)
+        NetworkHelper.getAnswers(page: 1, per_page: 5) { (response) in
+            print(response)
+        }
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

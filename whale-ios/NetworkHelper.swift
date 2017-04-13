@@ -86,7 +86,9 @@ struct NetworkHelper {
                     let valueToken = headerResponse?.allHeaderFields[key]
                     
                     // Save to keychain
-                    KeychainHelper.saveToKeychain(key: key, value: valueToken! as! String)
+                    try? KeychainHelper.saveToKeychain(key: key, value: valueToken! as! String)
+                    
+//                    print("Value token: ", valueToken!)
                     
                     
                 } catch {
@@ -151,9 +153,7 @@ struct NetworkHelper {
                     let valueToken = headerResponse?.allHeaderFields[key]
                     
                     // Save to keychain
-                    KeychainHelper.saveToKeychain(key: key, value: valueToken! as! String)
-
-                    
+                    try KeychainHelper.saveToKeychain(key: key, value: valueToken! as! String)
                     
                 } catch {
                     completion(.failure(error))
@@ -171,8 +171,9 @@ struct NetworkHelper {
     
     
     
+    
 //[S - GET ANSWERS]
-    static func GetAnswer(per_page: Int, intpage: Int, competion: @escaping CallCompletion){
+    static func getAnswers(page: Int, per_page: Int, completion: @escaping CallCompletion){
         
         //Create url
         var urlComponents = URLComponents()
@@ -182,28 +183,65 @@ struct NetworkHelper {
         
         
         // add params
+        let page = URLQueryItem(name: "page", value: String(page))
         let perPage = URLQueryItem(name: "per_page", value: String(per_page))
-        let intPage = URLQueryItem(name: "intpage", value: String(intpage))
         
-        urlComponents.queryItems = [perPage, intPage]
-        
+        urlComponents.queryItems = [page, perPage]
         
         
-        
-        // Create request, and HTTP method
+        // Request
         var request = URLRequest(url: urlComponents.url!)
         
+        // Request type
         request.httpMethod = "GET"
         
+        // Get authoken, then pass as header
+        guard let authToken = KeychainHelper.getFromKeychain(key: "Authorization") else { return }
+        print("This is the auth token caugth", authToken)
+        
+        // Add token to header
+        request.addValue(authToken, forHTTPHeaderField: "Authorization")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         
-        let task = URLSession.shared.dataTask(with: urlComponents.url!) { (data, response, error) in
-            <#code#>
+        
+        
+        // Make the API Call
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let errorReceived = error {
+                print("There is no error")
+                completion(.failure(errorReceived))
+            } else {
+                guard let dataReceived = data else { return }
+//                print("This is the data received: ", String(data: dataReceived, encoding: .utf8)!)
+                
+                // convert into json and parse
+                do {
+                    let json = try JSONSerialization.jsonObject(with: dataReceived, options: .allowFragments)
+//                    print("Json: ", json)
+                    let parsedAnswer = AnswerParser.parse(json: json)
+                    print("parsedAnswer", parsedAnswer)
+                    
+                } catch {
+                    print("There was an error")
+                }
+            }
         }
         
         task.resume()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
-    
     
     
     

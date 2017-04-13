@@ -37,6 +37,14 @@
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkT-OG-hSv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s35-wR-gyw">
+                                <rect key="frame" x="134" y="428" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Answers"/>
+                                <connections>
+                                    <action selector="getAnswers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Mr-Gm-zv2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
